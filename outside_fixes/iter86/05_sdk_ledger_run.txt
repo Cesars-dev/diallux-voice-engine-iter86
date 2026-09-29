@@ -1,0 +1,7 @@
+== ledger run fix1-bargeloop ==
+-- runs (1) --
+{"run_id": "fix1-bargeloop", "commit_sha": "b97957f", "imported_at": "2026-09-29T02:33:19.245190+00:00", "window": "02:19-02:31", "n_calls": 2, "session": "fix1-bargeloop"}
+-- calls (2) --
+{"trace_id": "3009701c1d83c06b7de16e3365346699", "run_id": "fix1-bargeloop", "trace_name": "micbridge-3c6ae56be196", "ts": "2026-09-29T02:19:13.286Z", "persona": "micbridge-3c6ae56be196", "outcome": "", "turns": 3, "passed": 1}
+{"trace_id": "8ac96fc4db19c5016bb3271b5632ba0d", "run_id": "fix1-bargeloop", "trace_name": "micbridge-6cc7e46b11e4", "ts": "2026-09-29T02:21:10.703Z", "persona": "micbridge-6cc7e46b11e4", "outcome": "", "turns": 50, "passed": 1}
+-- findings (0) --

@@ -1,0 +1,19 @@
+== compare 8ac96fc4db19c5016bb3271b5632ba0d vs 52cc1ef80523da29d365b09926a13bd2 ==
+            metric |          A |          B
+              gens |         50 |          9
+      turn_reports |         31 |          9
+             dur_s |      308.4 |      274.8
+     turns_per_min |       6.03 |       1.97
+           gap_p50 |        5.6 |       20.0
+           gap_p90 |       12.7 |       39.6
+           uperm_n |         23 |          9
+         uperm_p50 |     1191.8 |     1233.5
+         uperm_p90 |     3420.1 |     1514.5
+        barge_rate |       0.94 |       0.67
+
+note: A trace
+8ac96fc4db19c5016bb3271b5632ba0d
+      B trace
+52cc1ef80523da29d365b09926a13bd2
+gap = inter-GENERATION-start delta (LLM call starts; includes agent speak time + caller wait;
+a coarse caller-pace proxy — see report caveats)

@@ -1,0 +1,23 @@
+trace 52cc1ef80523da29d365b09926a13bd2  obs=61  gens=9 turn_reports=9  span=274.8s
+
+== per-turn matrix (report + user-perceived) ==
+turn | state | round ttft(real) | in/cache/out | S2L(eager-anchor) | L2T | T2A | E2Eresp | HS | uperm(conf-EOT) | barge | eager-match | resumed
+turn | state            |    ttft |         in/c/out |     S2L |    L2T |   T2A |  E2Eres |    HS |   uperm | barge | match | res
+   1 | ?                |       - |                - |     962 |    271 |   0.7 |    1234 |     0 |    1234 | False |  True |   -
+   2 | ?                |       - |                - |     850 |    270 |   0.7 |    1120 |     0 |    1120 | False |  True |   -
+   3 | ?                |       - |                - |     919 |    259 |   0.5 |    1179 |     1 |    1177 | False |  True |   -
+   7 | ?                |       - |                - |    1108 |    261 |   0.5 |    1370 |     0 |    1370 |  True |  True |   -
+   9 | ?                |       - |                - |    1116 |    256 |   0.6 |    1373 |     0 |    1372 |  True |  True |   -
+  10 | ?                |       - |                - |    1265 |    254 |   0.5 |    1519 |     0 |    1519 |  True |  True |   -
+  11 | ?                |       - |                - |     936 |    252 |   0.4 |    1189 |     0 |    1189 |  True |  True |   -
+  13 | ?                |       - |                - |    1215 |    299 |   0.5 |    1515 |     0 |    1514 |  True |  True |   -
+  14 | ?                |       - |                - |     957 |    160 |   0.3 |    1118 |     0 |    1117 |  True |  True |   -
+
+round-ttft: no journal join (--journal)
+S2L(eager-anchor) n=9 p50=962 p90=1214.9
+E2Eresponse       n=9 p50=1233.6 p90=1514.8
+user-perceived (conf-EOT→audio-out) n=9 p50=1233.5 p90=1514.5 max=1519.3
+
+eager fires=0 releases=0 false_starts=0  await_warm spans=15
+await_warm outcomes={'already_done': 15} total waited=0ms
+warm spans: {'warm:lite:Intake': 1, 'warm:Intake': 1}

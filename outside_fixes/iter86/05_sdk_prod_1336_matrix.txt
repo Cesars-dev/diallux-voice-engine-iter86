@@ -1,0 +1,21 @@
+trace d7f17f2c3b366a697391458722a3a2a4  obs=51  gens=7 turn_reports=7  span=113.3s
+
+== per-turn matrix (report + user-perceived) ==
+turn | state | round ttft(real) | in/cache/out | S2L(eager-anchor) | L2T | T2A | E2Eresp | HS | uperm(conf-EOT) | barge | eager-match | resumed
+turn | state            |    ttft |         in/c/out |     S2L |    L2T |   T2A |  E2Eres |    HS |   uperm | barge | match | res
+   1 | ?                |       - |                - |    1134 |    221 |   4.2 |    1358 |     2 |    1356 | False |  True |   -
+   2 | ?                |       - |                - |    1143 |    172 |   2.9 |    1318 |    24 |    1295 | False |  True |   -
+   3 | ?                |       - |                - |    1144 |    217 |   5.7 |    1366 |     1 |    1366 | False |  True |   -
+   4 | ?                |       - |                - |     754 |    293 |   2.6 |    1050 |    46 |    1004 | False |  True |   -
+   5 | ?                |       - |                - |    1038 |    267 |   3.8 |    1309 |     2 |    1307 | False |  True |   -
+   6 | ?                |       - |                - |     783 |    306 |   3.0 |    1092 |     0 |    1091 | False |  True |   -
+   7 | ?                |       - |                - |     793 |    303 |   3.1 |    1100 |    17 |    1083 | False |  True |   -
+
+round-ttft: no journal join (--journal)
+S2L(eager-anchor) n=7 p50=1038 p90=1143.1
+E2Eresponse       n=7 p50=1308.9 p90=1358.4
+user-perceived (conf-EOT→audio-out) n=7 p50=1294.6 p90=1356.5 max=1365.8
+
+eager fires=0 releases=0 false_starts=0  await_warm spans=6
+await_warm outcomes={'already_done': 6} total waited=0ms
+warm spans: {'warm:Intake': 1, 'warm:lite:Intake': 1}
